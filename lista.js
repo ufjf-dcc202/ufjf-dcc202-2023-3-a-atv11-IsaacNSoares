@@ -4,12 +4,16 @@ export function getLista(){
   return lista;
 }
 
-export function limparLista(){
+export function limpaLista(){
   lista.splice(0);
 }
 
-export function adicionarNaLista(novoItem){
+export function adicionaNaLista(novoItem){
   lista.push(novoItem);
 }
 
-//export{getLista};
+export function removeDaLista(posicao){
+  lista.splice(posicao, posicao);
+}
+
+//export{getLista, limpaLista, adicionaNaLista, removeDaLista};
